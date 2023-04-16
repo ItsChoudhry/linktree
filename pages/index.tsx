@@ -6,29 +6,33 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main>
-      <text className="flex flex-col items-center text-black">hello</text>
-      <div className="flex min-h-screen flex-col items-center space-y-4 p-24">
-        {linkCard(
-          "https://www.twitter.com/itsChoudhry",
-          "twitter-sign.png",
-          "Twitter"
-        )}
-        {linkCard(
-          "https://www.instagram.com/itsChoudhry",
-          "instagram.png",
-          "Instagram"
-        )}
-        {linkCard(
-          "https://www.github.com/itsChoudhry",
-          "github-sign.png",
-          "Github"
-        )}
-        {linkCard(
-          "https://www.youtube.com/@itsChoudhry1",
-          "youtube.png",
-          "Youtube"
-        )}
+    <main className="">
+      <div className="flex min-h-screen flex-col justify-between">
+        <div className="flex flex-col items-center space-y-4 px-24 pt-6">
+          {linkCard(
+            "https://www.twitter.com/itsChoudhry",
+            "twitter-sign.png",
+            "Twitter"
+          )}
+          {linkCard(
+            "https://www.instagram.com/itsChoudhry",
+            "instagram.png",
+            "Instagram"
+          )}
+          {linkCard(
+            "https://www.github.com/itsChoudhry",
+            "github-sign.png",
+            "Github"
+          )}
+          {linkCard(
+            "https://www.youtube.com/@itsChoudhry1",
+            "youtube.png",
+            "Youtube"
+          )}
+        </div>
+        <div className="flex flex-col items-center w-screen pb-2/3 relative">
+        <Image src={"/yami2.jpg"} alt="yami" fill></Image>
+        </div>
       </div>
     </main>
   );
